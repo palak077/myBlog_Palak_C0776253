@@ -1,0 +1,1108 @@
+/* Style sheet for the Mobile first strategy */
+/* fonts embed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@font-face
+{
+  font-family:'FontAwesome';
+  src:url('./fontawesome-webfont.eot');
+  src:url('./fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+  url('./fontawesome-webfont.woff') format('woff'),
+  url('./fontawesome-webfont.ttf') format('truetype'),
+  url('./fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight:normal;
+  font-style:normal
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before
+{
+  font-family:FontAwesome;
+  font-weight:normal;
+  font-style:normal;
+  display:inline-block;
+  text-decoration:inherit
+}
+*{
+  box-sizing: border-box;
+}
+/* styles for body element */
+body{
+    background-color: #1d1d1c;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+}
+* {
+    box-sizing: border-box;
+  }
+  .box {
+    float: left;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+    width: 40.33%;
+    margin-right: 2em;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* styles for fluid image */
+img {
+    max-width: 100%;
+  }
+  
+main h2 {
+    text-align: center;
+  }
+
+/* styles for teh container id */
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body{
+    margin: 0;
+  }
+
+  /* styles for header section */
+header{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+  margin-left: 3em;
+  margin-bottom: -70px;
+  position: relative;
+  z-index: 10;
+}
+/* styles for nav element */
+nav{
+
+    font-size: 1.25em;
+  
+    text-align: center;
+    margin-top: 0;
+}
+
+/* add styles for the unordered list in teh nav */
+nav ul {
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  /* add style for the list items in the nav */
+nav li {
+
+    background-color: #D63253;
+    border-radius: 2em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+  }
+  
+  /* add styles for the anchor tag inside the li */
+  nav li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  /* styles for teh images inside the article */
+  article img {
+    width: 20%;
+    height: 20%;
+    margin-top: 1em;
+  }
+  /* styles for about */
+  .footer-about {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+.footer-box {
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 0px 7px 0px #00000021;
+  margin-right: 20px;
+  width: 200px;
+}
+.read_btn{
+  display: none;
+}
+.an-skillbox {
+  width: calc(50% - 10px);
+  padding: 20px;
+  height: 100%;
+  min-height: 150px;
+  background: #ffffff;
+  box-shadow: 0px 0px 7px 0px #00000021;
+  height: auto;
+  margin-bottom: 20px;
+}
+.common-btn {
+  font-size: 20px;
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  background: #f26c4f;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* add styles for the mobile class */
+.mobile {
+    display: inline;
+  }
+  
+  /*  */
+  .skillbox h5 {
+    font-size: 20px;
+    margin: 0;
+    color: #ffffff;
+    margin-top: 10px;
+}
+  /* styles for the main div */
+main {
+    font-size: 16px;
+    margin-top: 0.5em;
+    padding: 0;
+    border-radius: 2em 0 2em 0;
+    background-color: #ffffff;
+    opacity: 1;
+  }
+   /* footer styles */
+footer {
+    font-size: 0.5em;
+    text-align: center;
+    margin-top: 0em;
+    color: #ffffff;
+  }
+    /* styles for anchor tag in main element */
+  .an-skill-outer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+ 
+/* styles for anchor tag in footer */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+
+  .tablet {
+    display: none;
+  }
+  
+  /* styles for teh equip class */
+  .equip {
+    display: none;
+  }
+  .ft-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+  }
+
+  .social-icon{
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .social-icon li{
+    list-style-type: none;
+    margin-left: 10px;
+  }
+  .social-icon li a{
+    display: block;
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 30px;
+    border:2px solid #ffffff;
+  }
+  .skill-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .social-icon li a:hover{
+    border-color:#f26c4f;
+    background: #f26c4f;
+  }
+  .skillbox {
+    width: calc(50% - 20px);
+    margin-bottom: 30px;
+    text-align:center;
+  }
+    /* styles for section */
+    /* section {
+      color: #ffffff;
+     
+    } */
+  
+    /* styles for teh anchor tag inside section */
+    section a {
+      color: #ffffff;
+    }
+  
+    /* styles for tha paragraphs in section */
+    section p {
+      margin-left: 0;
+    }
+  
+    /* styles for the main heading h2 */
+    main h2 {
+      color: #000000;
+    }
+  
+    /* styles for the contact */
+    .contact {
+      color: #ffffff;
+    }
+  
+    /* styles for the h2 in article main */
+    main article h2 {
+      color: #000000;
+    }
+  
+    article p {
+      color: #ffffff;
+    }
+  
+    article img {
+      width: 20%;
+      height: 20%;
+      margin-top: 1em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /* styles for the table */
+    table {
+      background-color: #ffffff;
+      width: 100%;
+    }
+    table th{
+      padding: 10px;
+      max-width: 25%;
+      min-width: 200px;
+    }
+
+    .text-left{
+      text-align: left;
+    }
+  
+    table th, td {
+      font-size: 18px;
+    }
+    td {
+      color: #424242;
+      font-size: 16px;
+    }
+  
+    /* styles for the caption */
+    caption {
+      font-size: 2.5em;
+    }
+  
+  /* experience-page */
+  .duties-rols{
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  .table-outer{
+    padding: 50px 0;
+  }
+  .text-left.heading h2{
+    text-align: left;
+  }
+  .duties-rols ul {
+    padding-left: 0;
+  }
+   .duties-rols ul li{
+    color: #424242;
+    margin-bottom: 15px;
+    list-style-type: none;
+  }
+  .duties-rols ul li i{
+    color: #f26c4f;
+    margin-right: 5px;
+  }
+  /* projects */
+  .project-section{
+    padding: 50px 0;
+  }
+  .project-table td a{
+    font-size: 15px;
+    height: 35px;
+    padding: 0 20px;
+    border-radius: 35px;
+    line-height: 35px;
+    background: #f26c4f;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+  .project-table td a:hover{
+    background: #424242;
+  }
+
+  /* contact-page */
+  .contact-section{
+    padding: 50px 0;
+  }
+  .top-address{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .top-address i{
+    color: #f26c4f;
+    font-size: 48px;
+  }
+  .top-address span{
+    display: block;
+    min-height: 55px;
+    text-align: center;
+  }
+  .top-address figcaption{
+    font-size: 20px;
+    color: #425252;
+   
+    }
+    .top-address  figure{
+      width: 33.33%;
+      position: relative;
+      margin: 0;
+    }
+  .top-address{
+    text-align: center;
+  }
+  .top-address h5{
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .top-address address , .top-address  a{
+    color: #424242;
+    font-style: normal;
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    line-height: 1.8;
+  }
+
+  .top-address  figure:before {
+    height: 100%;
+    top: 0;
+    content: "";
+    position: absolute;
+    left: -1px;
+    border-left: 1px dotted #e0dede;
+    
+  }
+  .top-address  figure:first-child:before{
+    border: 0;
+  }
+  header{
+    background: #f9f9f9;
+  }
+  /* Media Query for teh tablet view port targets screen only */
+/* minimum width is 481px */
+
+    /* styles specifies teh horizontal display for the nav li */
+    nav li {
+      display: inline;
+      float: left;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+      padding-right: 0;
+      width: auto;
+      white-space: nowrap;
+      border-radius: 0;
+      background-color: transparent;
+    }
+  
+    /* styles for the main */
+    main {
+      clear: left;
+      /* margin-top: 4em; */
+      border-radius: 0;
+      overflow: auto;
+    }
+  
+    /* styles for h1 */
+    h1 {
+      text-align: center;
+    }
+  
+    /* styles for images in figure */
+    figure img {
+      background-color: #1d1d1c;
+      display: inline;
+      height: 8em;
+      width: 28%;
+      margin: 1%;
+      padding: 1%
+    }
+  
+    /* styles for the anchor tag in the figure */
+    figure a {
+      padding: 0;
+      background-color: transparent;
+      text-decoration: none;
+    }
+  
+    /* styles for the mobiole class */
+    .mobile {
+      display: none;
+    }
+  
+    /* sektop styles */
+    .desktop {
+      display: block;
+      text-align: center;
+    }
+    .banner-text{
+      max-width: 1140px;
+      width: 100%;
+    }
+    .banner-text h2{
+    font-size: 42px;
+      margin-bottom: 10px;
+      color: #f26c4f;
+  }
+  .banner-text h5{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .wrapper{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .orange-text{
+    color: #f26c4f;
+  }
+  .about-outer{
+    display: flex;
+  }
+  .content-about {
+    text-align: left;
+  }
+  .content-about h2{
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 42px;
+    margin-top: 0;
+  }
+  .content-about h5{
+    color: #424242;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .content-about p{
+    color: #424242;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  .image-about{
+    width: 45%;
+    position: relative;
+  }
+  .image-about img{
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 0px #00000021;  
+  }
+  .about-box{
+    padding: 50px 0;
+  }
+  .content-about{
+    width: 55%;
+    padding-left: 30px;
+  }
+
+  .common-btn{
+    font-size: 20px;
+    height: 50px;
+    padding: 0 30px;
+    border-radius: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    background: #f26c4f;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .common-btn:hover{
+    background: #424242;
+  }
+  .footer-about{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-box{
+    padding:  20px ;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 0px 7px 0px #00000021;
+    margin-right: 20px;
+    width: 200px;
+  }
+  .footer-box p{
+    margin-bottom: 0;
+    margin: 0;
+  }
+  .footer-box h4{
+      color: #424242;
+      font-size: 24px;
+      margin: 0;
+  }
+
+  /* about */
+  .image-about{
+    position: relative;
+  }
+  .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    background-size: 100% 100% !important;
+    border: 0 !important;
+    font-size: 0;
+    cursor: pointer;
+    z-index: 10;
+    outline: none;
+  }
+  .slick-next {
+    background: url(../images/next.png) 0 0 no-repeat;
+  right: 0;
+  }
+  .slick-prev {
+    background: url(../images/back.png) 0 0 no-repeat;
+  left:  0;
+  
+  }
+  /* skills */
+  .technical-skills{
+    background: #020312;
+    padding: 50px 0;
+  }
+  
+  .skill-block{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .skillbox{
+    background: #12141c;
+    width: calc(25% - 20px);
+    padding: 20px;
+    height: 100%;
+    min-height: 200px;
+  }
+  .skillbox img{
+    width: 60px;
+  }
+  .skillbox h5{
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .skillbox p  {
+    color: #dfdfdf;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .technical-skills .heading h2{
+    color: #ffffff;
+  }
+
+  .heading h2{
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 42px;
+  }
+  /* analytics skill set */
+  .skill-analytics{
+    padding: 50px 0;
+     background-color: #f8f9fa;
+  }
+  .an-skill-outer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .an-skillbox{
+    width: calc(50% - 10px);
+    padding: 20px;
+    height: 100%;
+    min-height: 150px;
+    background: #ffffff;
+    box-shadow: 0px 0px 7px 0px #00000021;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .an-skillbox p{
+    color: #424242;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+    /* styles for the eqiup class */
+    .equip {
+      display: inline;
+      float: left;
+      margin-right: 1.5em;
+    }
+  
+    /* styles for teh class items */
+    .items {
+      display: block;
+      list-style-position: inside;
+    }
+  
+    /* styles for the tablet class */
+    .tablet {
+      display: block;
+      margin-top: -3em;
+      margin-bottom: -1em;
+    }
+  
+    /* styles fro the section */
+ 
+    /* styles for teh h1 in teh section */
+    section h1 {
+      text-align: left;
+    }
+  
+    /* styles for teh anchor tag inside section */
+    section a {
+      background-color: transparent;
+      color: #1d1d1c;
+      font-weight: normal;
+      padding: 0;
+      text-decoration: underline;
+    }
+  
+    /* styles for the dt */
+    dt {
+      font-weight: bold;
+      margin-top: .7em;
+    }
+  
+    /* styles for teh contact class */
+    .contact {
+      background-color: transparent;
+      padding: 0;
+      color: #1d1d1c;
+      text-decoration: underline;
+    }
+  
+    /* styles for the article element */
+    article {
+      background-color: #D63253;
+      float: left;
+      margin: 0.5%;
+      padding: 0.5%;
+      text-align: center;
+      width: 31%;
+      border-radius: 20px;
+    }
+  
+    /* styles for teh images inside the article */
+    article img {
+      width: 30%;
+      height: 30%;
+      margin-top: 1em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /* styles for the paragraphs inside the article */
+    article p {
+      color: #000000;
+      margin-top: 2%;
+      padding: 1%;
+      text-align: left;
+    }
+  
+    /* styles for the ul inside the article */
+    article ul {
+      text-align: left;
+    }
+  
+    /* styles for the aside element */
+ 
+    /* styles for the table */
+    table {
+      border: 0.1em solid #000000;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  
+    /* styles for the th and td */
+    th, td {
+      border: 0.1em solid #eeeeee;
+      padding: 1em;
+      text-align: left;
+      font-size: 1.1em;
+    }
+  
+    /* styles for the th */
+    th {
+      background-color: #424242;
+      color: #ffffff;
+      font-weight: normal;
+    }
+  
+    /* styles for caption */
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+  
+    /* styles for the flex-container class */
+    .flex-container {
+      display: flex;
+    }
+  }
+    /* styles for ul in nav */
+    nav ul {
+      margin: 0;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      display: flex;
+      align-items: center;
+    }
+  
+    /* styles for teh li in nav */
+    nav li {
+      margin: 0;
+      margin-left: 3em;
+      margin-right: 0;
+      padding: 0;
+
+      width: auto;
+    }
+  
+    /* styles for the links in the nav */
+    nav li a {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #424242;
+      height: 104px;
+      line-height: 104px;
+    }
+   
+    #banner{
+      position: relative;
+    }
+  
+    .banner-text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #ffffff;
+      text-align: left;
+      transform: translate(-50% , -50%);
+    }
+    /* styles for teh main element */
+    main {
+      background-color: #ffffff;
+    }
+  
+    /* styles for the paragraphs inside main element */
+    main p {
+      font-size: 1.2em;
+    }
+  
+    /* styles for teh item class */
+    .items {
+      margin-bottom: 7em;
+    }
+  
+    /* adding pseudo class for the links */
+    nav li a:hover,  .active a  {
+      
+      border-bottom: 2px solid #f26c4f;
+    }
+    /* styles for the gradients */
+    body {
+      background-color: #ffffff;
+    }
+  
+    /* styles for header */
+    header {
+      text-align: left;
+    }
+  
+    /* styles for teh nav */
+    nav {
+      float: right;
+      margin-right: 3em;
+      margin-bottom: 0;
+      margin-top: 0em;
+    }
+  
+    /* styles for images inside figure element */
+    figure img {
+      height: 15em;
+      opacity: 0.7;
+    }
+  
+    /* styles removing transparency */
+    figure img:hover {
+      opacity: 1;
+    }
+  
+    /* styles for h1  */
+    h1 {
+      color: #ffffff;
+    }
+  
+    /* styles for the footer */
+    footer {
+      background-color: #2a2a2a;
+      margin-top:0;
+      padding: 30px 0;
+      font-size: 18px;
+    
+    }
+    footer p{
+      margin: 0;
+    }
+    footer a{
+      font-size: 16px;
+    }
+  
+
+  /* Media query for desktop width size 992*/
+  @media only screen and (max-width: 1199px){
+    .banner-text {
+      left:55%;
+    }
+    .wrapper{
+      max-width: 955px;
+      padding: 0 15px;
+    }
+    main p {
+      font-size: 15px;
+      line-height: 17px;
+  }
+  .skillbox h5 {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .skillbox{
+    min-height: 226px;
+  }
+  }
+
+  /* Media query for desktop width size 992*/
+  @media only screen and (max-width: 991px){
+   .content-about h2{
+     font-size: 32px;
+   }
+   .content-about h5{
+    font-size: 18px;
+  }
+  .content-about p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .wrapper {
+    max-width: 720px;
+}
+.content-about{
+  padding-left: 20px;
+}
+.content-about p{
+  font-size: 13px;
+}
+.footer-about{
+  margin-bottom: 15px;
+}
+.footer-box h4 {
+  font-size: 22px;
+}
+.common-btn {
+  font-size: 15px;
+  height: 45px;
+  line-height: 47px;
+}
+.heading h2{
+  font-size: 32px;
+}
+.skillbox h5{
+  font-size: 16px;
+}
+.skillbox {
+  width: calc(50% - 20px);
+  margin-bottom: 30px;
+  text-align:center;
+}
+.an-skillbox {
+  min-height: 216px;
+}
+footer{
+  padding: 15px 0;
+}
+.banner-text h2 {
+  font-size: 28px;
+}
+.banner-text h5{
+  font-size: 16px;
+}
+.banner-text h5 br{
+  display: none;
+}
+.heading h2 {
+  font-size: 28px;
+}
+.banner-text {
+  position: static;
+  top: 0;
+  left:0;
+  color: #ffffff;
+  text-align: center;
+  transform: none;
+}
+.heading h2 {
+  font-size: 24px;
+}
+}
+
+ /* Media query for desktop width size 767*/
+ @media only screen and (max-width: 767px){
+  .orange-text{
+    color: #f26c4f;
+  }
+    .read_btn{
+      margin-bottom: 20px;
+    }
+    .heading h2 {
+      font-size: 28px;
+  }
+  .banner-text h2{
+    font-size: 28px;
+  }
+  .skillbox {
+    width: 50%;
+    min-height: 170px; 
+  }
+  .icon-skill img {
+    width: 70px;
+}
+skill-block {
+  padding-top: 30px;
+}
+.wrapper{
+    max-width: 540px;
+    margin: auto;
+}
+.an-skillbox
+{
+  width: 100%;
+  min-height: 0;
+  padding: 10px;
+}
+
+.heading h2 {
+  font-size: 24px;
+}
+.main{
+  border-radius: 0;
+}
+
+}
+/*  */
+@media only screen and (max-width: 640px){
+.wrapper{
+  width: 100%;
+}
+}
+ /* Media query for desktop width size 640*/
+ @media only screen and (max-width: 567px){
+  .icon-skill img {
+    width: 45px;
+  }
+  .main p {
+  font-size: 13px;
+}
+  .heading h2 {
+  font-size: 21px;
+  }
+  .heading h2 {
+    font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+  .footer-box {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer-about {
+  display: block;
+}
+.content-about {
+  padding-left: 0;
+}
+.skillbox {
+  width: 100%;
+  min-height: 0;
+}
+.ft-inner {
+  display: block;
+  text-align: center;
+}
+ul.social-icon {
+  margin: 0;
+  padding: 0;
+}
+}
+
